@@ -33,7 +33,7 @@ public class Idcheck extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		System.out.println("/Idcheck");
 		String id = request.getParameter("id");
 		
 		ResultSet rs = null;
@@ -92,8 +92,6 @@ public class Idcheck extends HttpServlet {
 			}
 		}
 	}
-		
-		
 		protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);

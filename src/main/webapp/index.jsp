@@ -14,7 +14,7 @@
 <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
 <!--css, js 파일을 다운받아서 넣어서 쓰는 방법  -->
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">7
 <!--제이쿼리 최신버전 코드 웹으로 연결해서 쓰는 방법  -->
 
 </head>
@@ -50,8 +50,6 @@
 			}
 		});
 	}); */
-
-	
 	
 	
 	  $(document).ready(function() {
@@ -76,14 +74,12 @@
 	            
 	            if(!exp.test(id)){ 
 	            	alert("영문자와 숫자만 입력가능합니다."); 
-	            	$("#userid").focus(); 
+	            	$("#id").focus(); 
 	            	return; 
 	            }
 
 //$반복 var exp = /[a-z0-9]$/; //영문자와 숫자 //정규표현식. test(입력값) 규칙에 맞으면 true if(!exp.test(userid)){ alert("영문자와 숫자만 입력가능합니다."); $("#userid").focus(); return; }
 //비동기 ajax 방식으로 데이터 주고 받기 방버버
-	 
-	 
 	 
 	          /*   alert(id); */
 	            
@@ -108,15 +104,11 @@
 	                error: function () {
 					alert("서버 요청 실패");						
 					}
-	 
 	            });
 	        });
 	 
 	    });
 </script>
-
-
-
 
 
 
